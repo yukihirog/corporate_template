@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no">
+<title>コンポーネント</title>
+<meta name="theme-color" content="#E64545">
+<link rel="stylesheet" href="css/example.css">
+
+<meta name="description" content="Description Here">
+<!--
+<meta property="fb:app_id" content="123456789">
+<meta property="og:url" content="http://example.com/page.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Content Title">
+<meta property="og:image" content="https://example.com/image.jpg">
+<meta property="og:description" content="Description Here">
+<meta property="og:site_name" content="Site Name">
+<meta property="og:locale" content="ja_JP">
+-->
+<link rel="canonical" href="http://example.com/page.html">
+</head>
+<body>
+<div class="structure" id="screen-frame">
+<header class="structure" role="banner" id="site-header">
+<div class="structure-body">
+<nav class="shortcut">
+<h2 aria-hidden="true">メニューをスキップ</h2>
+<ul>
+<li><a href="#content">コンテンツ</a></li>
+<li><a href="#site-footer">このサイトについて</a></li>
+</ul>
+</nav>
+<h1 class="title"><a href="/"><img src="http://dummyimage.com/520x200/000/fff.png&amp;text=LOGO" width="130" height="50" alt="社名とか"></a></h1>
+<nav class="menu">
+<h2 aria-hidden="true">メニュー</h2>
+<ul>
+<li><a href="?">メニュー1</a></li>
+<li><a href="?">メニュー2</a></li>
+<li><a href="?">メニュー3</a></li>
+<li><a href="?">メニュー4</a></li>
+<li><a href="?">メニュー5</a></li>
+</ul>
+</nav>
+<form class="search-box" action=".">
+<fieldset>
+<legend aria-hidden="true">サイト内検索</legend>
+<label><span class="label-text" aria-hidden="true">キーワード </span><input type="search" name="q" placeholder="キーワード" value=""></label>
+<input type="submit" value="検索">
+</fieldset>
+</form>
+<nav class="topicpath">
+<h2 aria-hidden="true">現在地</h2>
+<ul>
+<li><a href="/">ホーム</a></li>
+<li><a href="?">親ページ</a></li>
+<li><strong>ページ<span class="current" aria-hidden="true">(現在地)</span></strong></li>
+</ul>
+</nav>
+<!-- /structure-body --></div>
+</header>
+<main class="structure" role="main" id="content">
+<div class="structure-body">
+<header class="content-header">
+<h1 class="heading1">
+<small class="supertitle">スーパータイトル</small><br>
+<span class="title">見出しレベル1（ページタイトル）</span><br>
+<small class="subtitle">サブタイトル</small>
+</h1>
+</header>
+<div class="content-body">
+
+
+<section class="section-frame">
+<header class="sectin-header">
+<h2 class="heading2">見出しレベル2</h2>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<section class="section-frame">
+<header class="sectin-header">
+<h3 class="heading3">見出しレベル3</h3>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<section class="section-frame">
+<header class="sectin-header">
+<h4 class="heading4">見出しレベル4</h4>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<section class="section-frame">
+<header class="sectin-header">
+<h5 class="heading5">見出しレベル5</h5>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<section class="section-frame">
+<header class="sectin-header">
+<h6 class="heading6">見出しレベル6</h6>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<!-- /section-body --></div>
+<footer class="section-footer">
+
+<ul class="note-list">
+<li><small>注釈のリスト</small></li>
+<li><small>注釈のリスト</small></li>
+<li><small>注釈テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</small></li>
+</ul>
+
+</footer>
+</section>
+
+<!-- /section-body --></div>
+</section>
+
+<!-- /section-body --></div>
+</section>
+
+<!-- /section-body --></div>
+</section>
+
+<!-- /section-body --></div>
+</section>
+
+
+<section class="section-frame">
+<header class="sectin-header">
+<h2 class="heading2"><a href="?">見出しレベル2</a></h2>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<section class="section-frame">
+<header class="sectin-header">
+<h3 class="heading3"><a href="?">見出しレベル3</a></h3>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<section class="section-frame">
+<header class="sectin-header">
+<h4 class="heading4"><a href="?">見出しレベル4</a></h4>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<section class="section-frame">
+<header class="sectin-header">
+<h5 class="heading5"><a href="?">見出しレベル5</a></h5>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<section class="section-frame">
+<header class="sectin-header">
+<h6 class="heading6"><a href="?">見出しレベル6</a></h6>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<!-- /section-body --></div>
+<footer class="section-footer">
+
+<ul class="note-list">
+<li><small>注釈のリスト</small></li>
+<li><small>注釈のリスト</small></li>
+<li><small>注釈テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</small></li>
+</ul>
+
+</footer>
+</section>
+
+<!-- /section-body --></div>
+</section>
+
+<!-- /section-body --></div>
+</section>
+
+<!-- /section-body --></div>
+</section>
+
+<!-- /section-body --></div>
+</section>
+
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<ul class="list">
+<li>普通のリスト</li>
+<li>普通のリスト<br>2行目</li>
+<li>普通のリストの入れ子
+	<ul class="list">
+	<li>普通のリスト</li>
+	<li>普通のリスト<br>2行目</li>
+	<li>普通のリスト</li>
+	</ul>
+</li>
+<li>番号付きリストの入れ子
+	<ol class="list">
+	<li>番号付きリスト</li>
+	<li>番号付きリスト<br>2行目</li>
+	<li>番号付きリスト</li>
+	</ol>
+</li>
+</ul>
+
+<ol class="list">
+<li>番号付きリスト</li>
+<li>番号付きリスト<br>2行目</li>
+<li>番号付きリストの入れ子
+	<ol class="list">
+	<li>番号付きリスト</li>
+	<li>番号付きリスト<br>2行目</li>
+	<li>番号付きリスト</li>
+	</ol>
+</li>
+<li>普通のリストの入れ子
+	<ul class="list">
+	<li>普通のリスト</li>
+	<li>普通のリスト<br>2行目</li>
+	<li>普通のリスト</li>
+	</ul>
+</li>
+</ol>
+
+<dl class="description-list">
+<dt>定義リスト</dt>
+<dd>定義リストの中身</dd>
+<dt>定義リスト</dt>
+<dt>定義リスト</dt>
+<dt>定義リスト</dt>
+<dd>定義リストの中身</dd>
+<dd>定義リストの中身<br>2行目</dd>
+<dd>定義リストの中身</dd>
+</dl>
+
+<ul class="link-list">
+<li><a href="?">リンクリスト</a></li>
+<li><a target="_blank" href="http://example.com/">外部リンク</a></li>
+<li><a target="_blank" href="?.pdf">ファイルにリンク</a></li>
+</ul>
+
+<ul class="note-list">
+<li><small>注釈のリスト</small></li>
+<li><small>注釈のリスト</small></li>
+<li><small>注釈テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</small></li>
+</ul>
+
+
+<figure class="image">
+<img src="http://dummyimage.com/600x400/000/fff.png&amp;text=Image" width="300" height="200" alt="画像">
+<figcaption class="caption">画像のキャプション</figcaption>
+</figure>
+
+
+<table class="data-table">
+<caption>表キャプション</caption>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th scope="row">見出しセル</th>
+<th scope="row">見出しセル</th>
+<th scope="row">見出しセル</th>
+<th scope="row">見出しセル</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="col">見出しセル</th>
+<td>テキスト</td>
+<td>○</td>
+<td class="number">1,000</td>
+</tr>
+<tr>
+<th scope="col">見出しセル</th>
+<td>テキスト</td>
+<td>×</td>
+<td class="number">1,000</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th scope="col" colspan="3">合計など</th>
+<td class="number">3,000</td>
+</tr>
+</tfoot>
+</table>
+
+
+<table class="format-table">
+<colgroup>
+<col width="25%">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th scope="col">見出しセル</th>
+<td>テキスト</td>
+</tr>
+<tr>
+<th scope="col">見出しセル</th>
+<td>テキスト</td>
+</tr>
+<tr>
+<th scope="col">見出しセル</th>
+<td>テキスト</td>
+</tr>
+</tbody>
+</table>
+
+
+<form action=".">
+
+<ol class="step-list">
+<li><span>ステップ1</span></li>
+<li><strong>ステップ2<span class="current" aria-hidden="true">(現在)</span></strong></li>
+<li><span>ステップ3</span></li>
+<li><span>ステップ4</span></li>
+</ol>
+
+<div class="hidden-param" aria-hidden="true">
+<input type="hidden" name="param" value="1">
+<!-- /hidden-param --></div>
+
+<ul class="error-list">
+<li><a href="#param-text">○○を入力してください</a></li>
+<li><a href="#param-text">○○を入力してください</a></li>
+<li><a href="#param-text">○○を入力してください</a></li>
+</ul>
+
+<table class="format-table">
+<colgroup>
+<col width="25%">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th scope="col"><label for="param-text">テキスト<span class="required">(必須)</span></label></th>
+<td><input type="text" name="param" id="param-text" placeholder="テキスト" value="" required></td>
+</tr>
+<tr>
+<th scope="col"><label for="param-search">サーチ</label></th>
+<td><input type="search" name="param" id="param-search" placeholder="サーチ" value=""></td>
+</tr>
+<tr>
+<th scope="col"><label for="param-tel">てる</label></th>
+<td><input type="tel" name="param" id="param-tel" placeholder="03-1234-5678" value=""></td>
+</tr>
+<tr>
+<th scope="col"><label for="param-url">URL</label></th>
+<td><input type="url" name="param" id="param-url" placeholder="http://" value=""></td>
+</tr>
+<tr>
+<th scope="col"><label for="param-email">メール</label></th>
+<td><input type="email" name="param" id="param-email" placeholder="メールアドレス" value=""></td>
+</tr>
+<tr>
+<th scope="col"><label for="param-password">パスワード</label></th>
+<td><input type="password" name="param" id="param-password" placeholder="パスワード" value=""></td>
+</tr>
+<tr>
+<th scope="col">チェックボックス</th>
+<td>
+<ul class="checkbox-list">
+<li><label><input type="checkbox" name="param-checkbox" value="" checked><span class="label-text">チェックボックス</span></label></li>
+<li><label><input type="checkbox" name="param-checkbox" value=""><span class="label-text">チェックボックス</span></label></li>
+<li><label><input type="checkbox" name="param-checkbox" value=""><span class="label-text">チェックボックス</span></label></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="col">ラジオボタン</th>
+<td>
+<ul class="radio-list">
+<li><label><input type="radio" name="param-radio" value="" checked><span class="label-text">ラジオボタン</span></label></li>
+<li><label><input type="radio" name="param-radio" value=""><span class="label-text">ラジオボタン</span></label></li>
+<li><label><input type="radio" name="param-radio" value=""><span class="label-text">ラジオボタン</span></label></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="col"><label for="param-password">ファイル</label></th>
+<td><input type="file" name="param" id="param-file" value=""></td>
+</tr>
+<tr>
+<th scope="col"><label for="param-select">セレクト</label></th>
+<td><select name="param" id="param-select">
+<option selected>オプション1</option>
+<option>オプション2</option>
+<option>オプション3</option>
+</select></td>
+</tr>
+<tr>
+<th scope="col"><label for="param-textarea">テキストエリア</label></th>
+<td><textarea name="param" id="param-textarea" placeholder="テキストエリア" cols="60" rows="6"></textarea></td>
+</tr>
+</tbody>
+</table>
+
+<ul class="button-list">
+<li><a class="button cancel" href="?">キャンセル</a></li>
+<li><input class="button" type="submit" value="決定"></li>
+</ul>
+
+<ul class="button-list">
+<li><a class="button" href="?">リンクボタン</a></li>
+<li><input class="button" type="submit" value="決定"></li>
+<li><button class="button" type="submit">決定のボタン</button></li>
+</ul>
+
+<ul class="button-list">
+<li><a class="button cancel" href="?">リンクキャンセル</a></li>
+<li><input class="button cancel" type="submit" value="キャンセル"></li>
+<li><button class="button cancel" type="submit">キャンセルのボタン</button></li>
+</ul>
+
+<ul class="button-list">
+<li><a class="button function" href="?">リンク機能系ボタン</a></li>
+<li><input class="button function" type="button" value="機能系"></li>
+<li><button class="button function" type="button">機能系ボタン</button></li>
+</ul>
+
+</form>
+
+<ul class="page-list">
+<li class="prev"><a rel="prev" href="?">前のn件</a></li>
+<li><a href="?">1</a></li>
+<li><a href="?">2</a></li>
+<li><strong>3</strong></li>
+<li><a href="?">4</a></li>
+<li><a href="?">5</a></li>
+<li class="next"><a rel="next" href="?">次のn件</a></li>
+</ul>
+
+
+
+<h2 class="heading2">以下、レイアウトパターン</h2>
+
+<h3 class="heading3">2分割</h3>
+<div class="layout">
+<div class="col col-1/2">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<div class="col col-1/2">
+なかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみ
+<!-- /col --></div>
+<!-- /layout --></div>
+
+
+
+<h3 class="heading3">3分割</h3>
+<div class="layout">
+<div class="col col-1/3">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<div class="col col-1/3">
+なかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみ
+<!-- /col --></div>
+<div class="col col-1/3">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<!-- /layout --></div>
+
+
+
+<h3 class="heading3">3分割(1:2)</h3>
+<div class="layout">
+<div class="col col-1/3">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<div class="col col-2/3">
+なかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみ
+<!-- /col --></div>
+<!-- /layout --></div>
+
+
+
+<h3 class="heading3">4分割(1:1:2)</h3>
+<div class="layout">
+<div class="col col-1/4">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<div class="col col-1/4">
+なかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみ
+<!-- /col --></div>
+<div class="col col-1/2">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<!-- /layout --></div>
+
+
+
+<h3 class="heading3">4分割(1:3)</h3>
+<div class="layout">
+<div class="col col-1/4">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<div class="col col-3/4">
+なかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみなかみ
+<!-- /col --></div>
+<!-- /layout --></div>
+
+
+
+<h3 class="heading3">5分割(1:4)</h3>
+<div class="layout">
+<div class="col col-1/5">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<div class="col col-4/5">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<!-- /layout --></div>
+
+
+
+<h3 class="heading3">5分割(2:3)</h3>
+<div class="layout">
+<div class="col col-2/5">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<div class="col col-3/5">
+中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身中身
+<!-- /col --></div>
+<!-- /layout --></div>
+
+
+
+<!-- /content-body --></div>
+<footer class="content-footer">
+
+
+
+<div class="to-pagetop">
+<a href="#top">ページの先頭に戻る</a>
+<!-- /to-pagetop --></div>
+
+
+
+</footer>
+<!-- /structure-body --></div>
+</main>
+<footer class="structure" role="contentinfo" id="site-footer">
+<div class="structure-body">
+<h1 aria-hidden="true">このサイトについて</h1>
+<nav class="menu">
+<h2 aria-hidden="true">メニュー</h2>
+<ul>
+<li><a href="?">メニューとかヘルプ系とか1</a></li>
+<li><a href="?">メニュー2</a></li>
+<li><a href="?">メニュー3</a></li>
+<li><a href="?">メニュー4</a></li>
+<li><a href="?">メニュー5</a></li>
+</ul>
+</nav>
+<p class="copyright"><small>© (年号とか) (社名とか)</small></p>
+<!-- /structure-body --></div>
+</footer>
+<!-- /scree-frame --></div>
+</body>
+</html>
