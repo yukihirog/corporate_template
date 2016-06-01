@@ -7,7 +7,15 @@
 <meta name="format-detection" content="telephone=no">
 <title>コンポーネント</title>
 <meta name="theme-color" content="#E64545">
+<!--[if lt IE 9]>
+<script src="js/ie.html5elem.js"></script>
+<link rel="stylesheet" href="css/ie.html5elem.css">
+<![endif]-->
 <link rel="stylesheet" href="css/example.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/accordion.js"></script>
+<script src="js/tabgroup.js"></script>
+<script src="js/autoscroll.js"></script>
 
 <meta name="description" content="Description Here">
 <!--
@@ -26,7 +34,7 @@
 <div class="structure" id="screen-frame">
 <header class="structure" role="banner" id="site-header">
 <div class="structure-body">
-<nav class="shortcut">
+<nav class="shortcut" role="navigation">
 <h2 aria-hidden="true">メニューをスキップ</h2>
 <ul>
 <li><a href="#content">コンテンツ</a></li>
@@ -34,7 +42,7 @@
 </ul>
 </nav>
 <h1 class="title"><a href="/"><img src="http://dummyimage.com/520x200/000/fff.png&amp;text=LOGO" width="130" height="50" alt="社名とか"></a></h1>
-<nav class="menu">
+<nav class="menu" role="navigation">
 <h2 aria-hidden="true">メニュー</h2>
 <ul>
 <li><a href="?">メニュー1</a></li>
@@ -44,14 +52,14 @@
 <li><a href="?">メニュー5</a></li>
 </ul>
 </nav>
-<form class="search-box" action=".">
+<form class="search-box" role="searchbox" action=".">
 <fieldset>
 <legend aria-hidden="true">サイト内検索</legend>
 <label><span class="label-text" aria-hidden="true">キーワード </span><input type="search" name="q" placeholder="キーワード" value=""></label>
 <input type="submit" value="検索">
 </fieldset>
 </form>
-<nav class="topicpath">
+<nav class="topicpath" role="navigation">
 <h2 aria-hidden="true">現在地</h2>
 <ul>
 <li><a href="/">ホーム</a></li>
@@ -74,7 +82,7 @@
 
 
 <section class="section-frame">
-<header class="sectin-header">
+<header class="section-header">
 <h2 class="heading2">見出しレベル2</h2>
 </header>
 <div class="section-body">
@@ -86,7 +94,7 @@
 <!-- /text-block --></div>
 
 <section class="section-frame">
-<header class="sectin-header">
+<header class="section-header">
 <h3 class="heading3">見出しレベル3</h3>
 </header>
 <div class="section-body">
@@ -98,7 +106,7 @@
 <!-- /text-block --></div>
 
 <section class="section-frame">
-<header class="sectin-header">
+<header class="section-header">
 <h4 class="heading4">見出しレベル4</h4>
 </header>
 <div class="section-body">
@@ -110,7 +118,7 @@
 <!-- /text-block --></div>
 
 <section class="section-frame">
-<header class="sectin-header">
+<header class="section-header">
 <h5 class="heading5">見出しレベル5</h5>
 </header>
 <div class="section-body">
@@ -122,7 +130,7 @@
 <!-- /text-block --></div>
 
 <section class="section-frame">
-<header class="sectin-header">
+<header class="section-header">
 <h6 class="heading6">見出しレベル6</h6>
 </header>
 <div class="section-body">
@@ -161,7 +169,7 @@
 
 
 <section class="section-frame">
-<header class="sectin-header">
+<header class="section-header">
 <h2 class="heading2"><a href="?">見出しレベル2</a></h2>
 </header>
 <div class="section-body">
@@ -173,7 +181,7 @@
 <!-- /text-block --></div>
 
 <section class="section-frame">
-<header class="sectin-header">
+<header class="section-header">
 <h3 class="heading3"><a href="?">見出しレベル3</a></h3>
 </header>
 <div class="section-body">
@@ -185,7 +193,7 @@
 <!-- /text-block --></div>
 
 <section class="section-frame">
-<header class="sectin-header">
+<header class="section-header">
 <h4 class="heading4"><a href="?">見出しレベル4</a></h4>
 </header>
 <div class="section-body">
@@ -197,7 +205,7 @@
 <!-- /text-block --></div>
 
 <section class="section-frame">
-<header class="sectin-header">
+<header class="section-header">
 <h5 class="heading5"><a href="?">見出しレベル5</a></h5>
 </header>
 <div class="section-body">
@@ -209,7 +217,7 @@
 <!-- /text-block --></div>
 
 <section class="section-frame">
-<header class="sectin-header">
+<header class="section-header">
 <h6 class="heading6"><a href="?">見出しレベル6</a></h6>
 </header>
 <div class="section-body">
@@ -497,7 +505,10 @@
 
 </form>
 
-<ul class="page-list">
+
+<nav class="page-list" role="navigation">
+<h2 aria-hidden="true">前後のページ</h2>
+<ul>
 <li class="prev"><a rel="prev" href="?">前のn件</a></li>
 <li><a href="?">1</a></li>
 <li><a href="?">2</a></li>
@@ -506,6 +517,92 @@
 <li><a href="?">5</a></li>
 <li class="next"><a rel="next" href="?">次のn件</a></li>
 </ul>
+</nav>
+
+
+
+<section class="accordion">
+<header class="accordion-toggle" tab-index="0" role="tab" aria-controles="accordion-1" aria-selected="false">
+<h1 class="accordion-label">アコーディオン見出し</h1>
+</header>
+<div class="accordion-body" id="accordion-1" role="tabpanel" aria-expanded="false">
+<div class="accordion-content">
+
+<div class="text-block">
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<!-- /accordion-content --></div>
+<!-- /accordion-body --></div>
+</section>
+
+
+<div class="tab-group">
+<nav class="tab-list" role="tablist">
+<ul>
+<li><a class="tab" href="#tab-1" role="tab" aria-controles="tab-1" aria-selected="true">タブ1</a></li>
+<li><a class="tab" href="#tab-2" role="tab" aria-controles="tab-2" aria-selected="false">タブ2</a></li>
+<li><a class="tab" href="#tab-3" role="tab" aria-controles="tab-3" aria-selected="false">タブ3</a></li>
+</ul>
+</nav>
+
+<section class="section-frame tab-panel" id="tab-1" role="tabpanel" aria-hidden="false">
+<header class="section-header">
+<h2 class="heading2">タブ1</h2>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>タブ1の中身。</p>
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<!-- /section-body --></div>
+</section>
+
+<section class="section-frame tab-panel" id="tab-2" role="tabpanel" aria-hidden="true">
+<header class="section-header">
+<h2 class="heading2">タブ2</h2>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>タブ2の中身。</p>
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<!-- /section-body --></div>
+</section>
+
+<section class="section-frame tab-panel" id="tab-3" role="tabpanel" aria-hidden="true">
+<header class="section-header">
+<h2 class="heading2">タブ3</h2>
+</header>
+<div class="section-body">
+
+<div class="text-block">
+<p>タブ3の中身。</p>
+<p>本文テキスト。1000m<sup>3</sup>のH<sub>2</sub>O、すなわち大量の水。<br>
+それについては<a href="?">リンク先</a>をよく見るがいい。<em>強調。</em><strong>もっと強調！</strong><br>
+<a target="_blank" href="http://example.com/">外部リンク</a>、<a target="_blank" href="?.pdf">ファイルにリンク</a>。</p>
+<!-- /text-block --></div>
+
+<!-- /section-body --></div>
+</section>
+
+<!-- /tab-group --></div>
+
+
+
 
 
 
@@ -618,7 +715,7 @@
 <footer class="structure" role="contentinfo" id="site-footer">
 <div class="structure-body">
 <h1 aria-hidden="true">このサイトについて</h1>
-<nav class="menu">
+<nav class="menu" role="navigation">
 <h2 aria-hidden="true">メニュー</h2>
 <ul>
 <li><a href="?">メニューとかヘルプ系とか1</a></li>

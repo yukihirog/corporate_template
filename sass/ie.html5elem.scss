@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+%block {
+	display: block;
+}
+%inline {
+	display: inline;
+}
+%hidden {
+	display: none;
+}
+%embed {
+	display: inline-block;
+}
+
+
+article {
+	@extend %block;
+}
+section {
+	@extend %block;
+}
+nav {
+	@extend %block;
+}
+aside {
+	@extend %block;
+}
+header {
+	@extend %block;
+}
+footer {
+	@extend %block;
+}
+main {
+	@extend %block;
+}
+figure {
+	@extend %block;
+	margin: 1em 40px;
+}
+figcaption {
+	@extend %block;
+}
+
+time {
+	@extend %inline;
+}
+abbr {
+	@extend %inline;
+}
+keygen {
+	@extend %inline;
+}
+output {
+	@extend %inline;
+}
+keygen {
+	@extend %inline;
+}
+progress {
+	@extend %inline;
+}
+meter {
+	@extend %inline;
+}
+data {
+	@extend %inline;
+}
+source {
+	@extend %inline;
+}
+track {
+	@extend %inline;
+}
+
+embed {
+	@extend %embed;
+}
+video {
+	@extend %embed;
+}
+audio {
+	@extend %embed;
+}
+canvas {
+	@extend %embed;
+}
+
+template {
+	@extend %hidden;
+}
+datalist {
+	@extend %hidden;
+}
+

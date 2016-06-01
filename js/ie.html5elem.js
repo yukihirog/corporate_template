@@ -1,0 +1,1 @@
+(function(a){for(var i=0,n=a.length;i<n;i++)document.createElement(a[i])})(['article','section','nav','aside','header','footer','figure','figcaption','main','data','time','abbr','embed','video','audio','source','track','datalist','keygen','output','progress','meter','template','canvas']);
